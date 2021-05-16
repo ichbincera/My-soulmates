@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title></title>
+<style>
+  /*
+  display:none;으로 하면 화면에서 보이지 않게 된다.
+  */
+  /*
+  block level element (=tag)
+  block line element를 가지고 있는 h1 tag는 기본 display 값이 block일 뿐, 다른 것으로 지정할 수 있다.
+  disply; inline으로 설정하면 inline element와 같은 display 값을 가진다.
+  */
+  h1{
+      border-bottom: 5px solid orange;
+
+      padding:20px;
+      text-align: center;
+      margin:0px;
+
+      /*width:300px;*/
+/*
+border:5px solid red; 라고 해도 위와 똑같이 작동한다.
+여기에  margin:0px;이라고 지정하면 h1 위아래 간격이 0이 된다.
+*/
+
+  }
+
+  /*
+  inline element (=tag)
+  여기도 a의 display 기본 값이 inline 이지만 block으로 재지정할 수 있다.
+  */
+  a{
+      border-width:5px;
+      border-color:orange;
+      border-style:solid;
+    }
+
+  /*
+위 두 선택자를 한번에 선택하여 속성 지정하고 싶을 경우, h1,a{} 로 쓸 수 있다.
+
+  */
+  /*
+  css blox model
+  */
+  ul{
+
+    border-right: 2px solid orange;
+    width:200px;
+    padding:10px;
+    margin:0px;
+  }
+  #grid{
+
+    display:grid;
+    grid-template-columns: 150px 1fr;
+
+  }
+</style>
+  </head>
+  <body>
+<h1>또맹이</h1>
+<div id="grid">
+    <ul>
+      <li>  또맹이 몸무게</li>
+      <li>  또맹이 사이즈</li>
+      <li>  또맹이 좋아하는 음식</li>
+    </ul>
+    <div>
+      또맹이는 정말 귀엽다. <a href="https://www.youtube.com/"> 우리 또맹이.</a>
+    </div>
+</div>
+  </body>
+</html>
